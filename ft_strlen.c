@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 12:14:41 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 12:54:35 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/15 14:26:41 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@
     para
     retorna o contador
 */
-
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -39,7 +38,7 @@ int main(void)
     char    *str;
 
     str = "42 Lisboa!";
-    printf("%d\n", ft_strlen(str));
+    printf("%zu\n", ft_strlen(str));
     return (0);
 }
 */
