@@ -1,23 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 16:36:15 by joagomes         ###   ########.fr       */
+/*   Created: 2026/04/15 16:22:49 by joagomes          #+#    #+#             */
+/*   Updated: 2026/04/15 16:36:03 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+/*
+	Se estiver entre '0' e '9'
+		retorna 1
+	Senao
+		retorna 0
+*/
+#include "libft.h"
 
-# include <stddef.h>
-# include <stdio.h>
-
-size_t	ft_strlen(const char *s);
-int ft_isalpha(int c);
-int ft_isdigit(int c);
-
-#endif /* LIBFT_H */
+int	ft_isdigit(int c)
+{
+	return (c >= '0' && c <= '9');
+}
+/*
+int main(void)
+{
+	printf("%d\n", ft_isdigit('5'));
+	printf("%d\n", ft_isdigit('h'));
+	printf("%d\n", ft_isdigit(' '));
+	printf("%d\n", ft_isdigit('\t'));
+	printf("%d\n", ft_isdigit('9'));
+	return (0);
+}
+*/
