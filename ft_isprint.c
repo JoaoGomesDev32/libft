@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/15 17:03:16 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 17:33:31 by joagomes         ###   ########.fr       */
+/*   Created: 2026/04/15 17:37:24 by joagomes          #+#    #+#             */
+/*   Updated: 2026/04/15 17:45:20 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-	Se o valor estiver no intervalo tabela ASCII padrao (0-127)
+	Se o valor estiver no intervalo printavel na tabela ASCII padrao (32-126)
 		retorna 1
 	Senao
 		retorna 0
@@ -19,20 +19,20 @@
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_isprint(int c)
 {
-	return (c >= 0 && c <= 127);
+	return (c >= 32 && c <= 126);
 }
 /*
 int	main(void)
 {
-	printf("%d\n", ft_isascii('A'));
-	printf("%d\n", ft_isascii('$'));
-	printf("%d\n", ft_isascii(200));
-	printf("%d\n", ft_isascii('\n'));
-	printf("%d\n", ft_isascii(127));
-	printf("%d\n", ft_isascii(0));
-	printf("%d\n", ft_isascii(128));
+	printf("%d\n", ft_isprint(' '));
+	printf("%d\n", ft_isprint('$'));
+	printf("%d\n", ft_isprint('3'));
+	printf("%d\n", ft_isprint('\n'));
+	printf("%d\n", ft_isprint('\0'));
+	printf("%d\n", ft_isprint(31));
+	printf("%d\n", ft_isprint(127));
 	return (0);
 }
 */
