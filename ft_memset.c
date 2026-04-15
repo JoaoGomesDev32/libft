@@ -1,38 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/15 17:37:24 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 18:36:31 by joagomes         ###   ########.fr       */
+/*   Created: 2026/04/15 18:40:23 by joagomes          #+#    #+#             */
+/*   Updated: 2026/04/15 19:14:11 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Se o valor estiver no intervalo printavel na tabela ASCII padrao (32-126)
-		retorna 1
-	Senao
-		retorna 0
+	Recebo um endereco de memoria (s)
+	Quero tratar como sequencia de bytes
+	Para cada byte ate n:
+		substituir pelo valor c
+	Retornar o ponteiro original
 */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	return (c >= 32 && c <= 126);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)s)[i] = (unsigned char)c;
+		i++;
+	}
+	return (s);
 }
 /*
-int	main(void)
+int main(void)
 {
-	printf("%d\n", ft_isprint(' '));
-	printf("%d\n", ft_isprint('$'));
-	printf("%d\n", ft_isprint('3'));
-	printf("%d\n", ft_isprint('\n'));
-	printf("%d\n", ft_isprint('\0'));
-	printf("%d\n", ft_isprint(31));
-	printf("%d\n", ft_isprint(127));
+	char str[10];
+	ft_memset(str, 'X', 5);
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%c ", str[i]);
+	}
 	return (0);
 }
 */
