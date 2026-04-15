@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 16:36:15 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/15 16:50:13 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@
 size_t	ft_strlen(const char *s);
 int ft_isalpha(int c);
 int ft_isdigit(int c);
+int	ft_isalnum(int c);
 
 #endif /* LIBFT_H */
