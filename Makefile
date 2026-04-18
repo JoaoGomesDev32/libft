@@ -12,6 +12,7 @@ SRCS = ft_strlen.c \
 	ft_memmove.c \
 	ft_strlcpy.c \
 	ft_strlcat.c \
+	ft_strchr.c \
 
 OBJ = $(SRCS:.c=.o)
 
