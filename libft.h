@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/18 15:44:56 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/18 16:23:05 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif /* LIBFT_H */
