@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/20 14:44:37 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/20 16:49:29 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
+# include <stdint.h>
 # include <stdio.h>
 
 size_t	ft_strlen(const char *s);
@@ -38,5 +39,6 @@ char	*	ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 int ft_toupper(int c);
 int ft_tolower(int c);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif /* LIBFT_H */

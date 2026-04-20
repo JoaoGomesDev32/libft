@@ -21,6 +21,7 @@ SRCS = ft_strlen.c \
 	ft_strdup.c \
 	ft_toupper.c \
 	ft_tolower.c \
+	ft_calloc.c \
 
 OBJ = $(SRCS:.c=.o)
 
