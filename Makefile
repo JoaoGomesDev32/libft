@@ -20,6 +20,7 @@ SRCS = ft_strlen.c \
 	ft_strnstr.c \
 	ft_strdup.c \
 	ft_toupper.c \
+	ft_tolower.c \
 
 OBJ = $(SRCS:.c=.o)
 

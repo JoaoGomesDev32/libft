@@ -37,5 +37,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*	ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 int ft_toupper(int c);
+int ft_tolower(int c);
 
 #endif /* LIBFT_H */
