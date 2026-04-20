@@ -19,6 +19,7 @@ SRCS = ft_strlen.c \
 	ft_memcmp.c \
 	ft_strnstr.c \
 	ft_strdup.c \
+	ft_toupper.c \
 
 OBJ = $(SRCS:.c=.o)
 

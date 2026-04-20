@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/20 13:39:01 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/20 14:44:37 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*	ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
+int ft_toupper(int c);
 
 #endif /* LIBFT_H */
