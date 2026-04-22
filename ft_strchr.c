@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/18 14:03:05 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/22 15:27:02 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/22 15:35:15 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == (char)c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
