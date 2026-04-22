@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/20 16:49:29 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/22 11:44:36 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ char	*ft_strdup(const char *s);
 int ft_toupper(int c);
 int ft_tolower(int c);
 void	*ft_calloc(size_t nmemb, size_t size);
+int	ft_atoi(const char *nptr);
 
 #endif /* LIBFT_H */
