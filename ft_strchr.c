@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/18 14:03:05 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/18 15:36:19 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/22 11:20:17 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-/*
+
 int	main(void)
 {
 	char *str = "abcde";
@@ -55,4 +55,4 @@ int	main(void)
 
 	return 0;
 }
-*/
+

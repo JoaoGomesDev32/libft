@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/18 15:42:23 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/18 16:11:10 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/22 11:34:18 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,12 @@ int	main(void)
 	char	*str = "abcbdefe";
 	char	*res;
 
-	res = ft_strrchr(str, 'b');
-	printf("%s\n", res);
+	res = ft_strrchr(str, 'g');
+
+	if (res)
+		printf("%s\n", res);
+	else
+		printf("NULL\n");
 	return (0);
 }
 */
