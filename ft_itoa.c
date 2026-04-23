@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:06:17 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/23 16:41:15 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/23 17:01:32 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ char	*ft_itoa(int n)
 	int		count;
 	int		i;
 
-	count = count_digits(n);
 	nb = (long)n;
+	count = count_digits(n);
 	if (nb < 0)
 		nb = -nb;
 	res = malloc(sizeof (char) * (count + 1));
