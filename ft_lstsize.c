@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 14:20:01 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/27 15:44:13 by joagomes         ###   ########.fr       */
+/*   Created: 2026/04/27 15:41:04 by joagomes          #+#    #+#             */
+/*   Updated: 2026/04/27 16:01:59 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
 	t_list	*current;
+	int		len_lst;
 
-	if (*lst == NULL)
+	len_lst = 0;
+	current = lst;
+	while (current != NULL)
 	{
-		*lst = new;
-		return ;
-	}
-	current = *lst;
-	while (current->next != NULL)
 		current = current->next;
-	current->next = new;
+		len_lst++;
+	}
+	return (len_lst);
 }
 /*
 int main(void)
@@ -34,12 +34,13 @@ int main(void)
 	{
 		t_list  *lst;
 		t_list  *node;
+		int len;
 	
 		lst = ft_lstnew("world");
 		node = ft_lstnew("hello");
 		ft_lstadd_back(&lst, node);
-		printf("primeiro: %s\n", (char *)lst->content);
-		printf("segundo: %s\n", (char *)lst->next->content);
+		len = ft_lstsize(lst);
+		printf("Tamanho: %d\n", len);
 		free(lst->next);
 		free(lst);
 		return (0);
