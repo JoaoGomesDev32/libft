@@ -35,6 +35,7 @@ SRCS = ft_strlen.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	ft_lstnew.c \
+	ft_lstadd_front.c \
 
 OBJ = $(SRCS:.c=.o)
 
