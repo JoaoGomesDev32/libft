@@ -3,12 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaog <joaog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 09:37:07 by joaog             #+#    #+#             */
-/*   Updated: 2026/04/25 09:52:36 by joaog            ###   ########.fr       */
+/*   Updated: 2026/04/27 12:23:36 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+	Escreve uma string inteira no fd
+		Calcula o tamanho com o ft_strlen
+			passa o ponteiro s direto ao write
+			s já é um endereco
+*/
 
 #include "libft.h"
 

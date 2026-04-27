@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaog <joaog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 09:06:43 by joaog             #+#    #+#             */
-/*   Updated: 2026/04/25 09:35:13 by joaog            ###   ########.fr       */
+/*   Updated: 2026/04/27 12:11:10 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+	Escreve unico caractere no file descriptor
+		precisa do fd, endereco(&c) e quantos bytes
+*/
 
 #include "libft.h"
 

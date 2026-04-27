@@ -6,11 +6,18 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 10:58:42 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/27 11:15:32 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/27 12:15:42 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**/
+/*
+	Escreve uma string inteira no fd
+	Calcula o tamanho com o ft_strlen
+		passa o ponteiro s direto ao write
+		s já é um endereco
+	Add uma newline no final com um segundo write
+	("\n" é uma string de 1 caractere)
+*/
 
 #include "libft.h"
 
