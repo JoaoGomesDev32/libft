@@ -6,7 +6,7 @@
 #    By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/28 10:27:39 by joagomes          #+#    #+#              #
-#    Updated: 2026/04/28 12:10:08 by joagomes         ###   ########.fr        #
+#    Updated: 2026/04/28 12:32:37 by joagomes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,7 @@ SRCS = ft_strlen.c \
 	ft_lstdelone.c \
 	ft_lstclear.c \
 	ft_lstiter.c \
+	ft_lstmap.c
 
 OBJ = $(SRCS:.c=.o)
 
