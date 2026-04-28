@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 18:40:23 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/15 19:14:11 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:51:21 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,18 @@ void	*ft_memset(void *s, int c, size_t n)
 /*
 int main(void)
 {
-	char str[10];
-	ft_memset(str, 'X', 5);
-	for (int i = 0; i < 10; i++)
-	{
-		printf("%c ", str[i]);
-	}
-	return (0);
+    char str[10];
+    int  i;
+
+    ft_memset(str, 'X', 5);
+    str[5] = '\0';
+    i = 0;
+    while (i < 5)
+    {
+        printf("%c ", str[i]);
+        i++;
+    }
+    printf("\n");
+    return (0);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 16:04:35 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/27 16:20:47 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:30:05 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,18 @@ int main(void)
     t_list  *last;
 
     // Teste 1 — lista com 3 nós
-    lst = ft_lstnew("primeiro");
-    ft_lstadd_back(&lst, ft_lstnew("segundo"));
-    ft_lstadd_back(&lst, ft_lstnew("terceiro"));
+    lst = ft_lstnew(ft_strdup("primeiro"));
+    ft_lstadd_back(&lst, ft_lstnew(ft_strdup("segundo")));
+    ft_lstadd_back(&lst, ft_lstnew(ft_strdup("terceiro")));
     last = ft_lstlast(lst);
     printf("Teste 1 - ultimo: %s\n", (char *)last->content);
+    ft_lstclear(&lst, free);
 
     // Teste 2 — lista com 1 nó
-    node = ft_lstnew("unico");
+    node = ft_lstnew(ft_strdup("unico"));
     last = ft_lstlast(node);
     printf("Teste 2 - ultimo: %s\n", (char *)last->content);
+    ft_lstclear(&node, free);
 
     // Teste 3 — lista NULL
     last = ft_lstlast(NULL);

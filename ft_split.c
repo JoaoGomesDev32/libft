@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 11:29:48 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/23 14:34:14 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:01:45 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,13 @@ char	**ft_split(char const *s, char c)
 			while (s[i] && s[i] != c)
 				i++;
 			arr[j] = ft_substr(s, start, i - start);
+			if (!arr[j])
+			{
+				while (j > 0)
+					free(arr[--j]);
+				free(arr);
+				return (NULL);
+			}
 			j++;
 		}
 		else

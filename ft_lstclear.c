@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 11:32:22 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 12:05:06 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:20:03 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ int	main(void)
 	ft_lstclear(&lst, del);
 	printf("depois: %p\n", lst);
 	return (0);
-}
+} 
 */

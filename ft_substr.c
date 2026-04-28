@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:45:41 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/22 16:33:15 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:49:27 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int	main(void)
 	char *res;
 	res = ft_substr(str, 6, 5);
 	printf("%s\n", res);
+	free(res);
 	return (0);
 }
 */

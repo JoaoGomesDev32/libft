@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:06:17 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/23 17:01:32 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:17:17 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,18 +73,23 @@ int	main(void)
 	n = 42;
 	res = ft_itoa(n);
 	printf("%s\n", res);
+	free(res);
 	n = -42;
 	res = ft_itoa(n);
 	printf("%s\n", res);
+	free(res);
 	n = 0;
 	res = ft_itoa(n);
 	printf("%s\n", res);
+	free(res);
 	n = 2147483647;
 	res = ft_itoa(n);
 	printf("%s\n", res);
+	free(res);
 	n = -2147483648;
 	res = ft_itoa(n);
 	printf("%s\n", res);
+	free(res);
 	return (0);
 }
 */

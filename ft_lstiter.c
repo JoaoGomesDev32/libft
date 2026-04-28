@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:08:54 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 12:28:09 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:26:00 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,11 @@ void    print_upper(void *content)
     printf("%s\n", str);
 }
 
+void    del(void *content)
+{
+    free(content);
+}
+
 int	main(void)
 {
 	t_list	*lst;
@@ -51,6 +56,7 @@ int	main(void)
 	lst = ft_lstnew(ft_strdup("hello"));
 	ft_lstadd_back(&lst,ft_lstnew(ft_strdup("world")));
 	ft_lstiter(lst, print_upper);
+	ft_lstclear(&lst, del);
 	return (0);
 }
 */

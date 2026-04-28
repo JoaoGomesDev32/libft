@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 13:17:53 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/20 13:50:42 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:44:04 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	main(void)
 	char	*dest = ft_strdup(src);
 
 	printf("%s\n", dest);
+	free(dest);
 	return (0);
 }
 */
