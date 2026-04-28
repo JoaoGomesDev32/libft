@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/04/28 10:27:39 by joagomes          #+#    #+#              #
+#    Updated: 2026/04/28 10:27:51 by joagomes         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 SRCS = ft_strlen.c \
@@ -39,6 +51,7 @@ SRCS = ft_strlen.c \
 	ft_lstadd_back.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
+	ft_lstdelone.c \
 
 OBJ = $(SRCS:.c=.o)
 
