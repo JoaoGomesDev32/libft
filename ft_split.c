@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 11:29:48 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 17:01:45 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:24:45 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,19 @@ int	count_words(char const *s, char c)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+void	free_all(char **arr, int j)
 {
-	char	**arr;
-	int		i;
-	int		j;
-	int		start;
+	while (j > 0)
+		free(arr[--j]);
+	free(arr);
+}
 
-	arr = malloc(sizeof (char *) * (count_words(s, c) + 1));
-	if (!arr)
-		return (NULL);
+int	fill_array(char **arr, char const *s, char c)
+{
+	int	i;
+	int	j;
+	int	start;
+
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -61,18 +64,27 @@ char	**ft_split(char const *s, char c)
 				i++;
 			arr[j] = ft_substr(s, start, i - start);
 			if (!arr[j])
-			{
-				while (j > 0)
-					free(arr[--j]);
-				free(arr);
-				return (NULL);
-			}
+				return (free_all(arr, j), 0);
 			j++;
 		}
 		else
 			i++;
 	}
 	arr[j] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+
+	if (!s)
+		return (NULL);
+	arr = malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!arr)
+		return (NULL);
+	if (!fill_array(arr, s, c))
+		return (NULL);
 	return (arr);
 }
 /*

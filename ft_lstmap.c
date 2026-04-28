@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:30:16 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 16:31:12 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/28 17:14:57 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
-
+/*
 void    *to_upper(void *content)
 {
     char    *str;
@@ -62,7 +62,7 @@ void    *to_upper(void *content)
     }
     return (new);
 }
-/*
+
 void    del(void *content)
 {
     free(content);
