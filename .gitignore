@@ -29,6 +29,7 @@ __pycache__/
 # Test output and helper directories
 tests/
 libftTester/
+libft_tester.sh
 
 # General temporary files
 *.tmp
