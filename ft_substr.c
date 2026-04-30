@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:45:41 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 16:49:27 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:42:09 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ptr[0] = '\0';
 		return (ptr);
 	}
+	if (len > len_s - start)
+		len = len_s - start;
 	ptr = malloc(sizeof(char) * (len + 1));
 	if (!ptr)
 		return (NULL);

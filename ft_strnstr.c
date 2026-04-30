@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 11:56:18 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/20 12:56:10 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/30 13:34:52 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] && i < len)
 	{
 		j = 0;
-		while (i + j < len && big[i + j] == little[j])
+		while (little[j] && i + j < len && big[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
 			return ((char *)&big[i]);

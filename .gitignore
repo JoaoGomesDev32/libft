@@ -1,0 +1,35 @@
+# Compiled object files and libraries
+*.o
+*.a
+*.so
+
+# Executables
+a.out
+libft
+libft.a
+
+# Coverage and test output
+*.gcda
+*.gcno
+*.info
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS metadata
+.DS_Store
+
+# Python cache (if any helper scripts exist)
+__pycache__/
+*.pyc
+
+# Test output and helper directories
+tests/
+libftTester/
+
+# General temporary files
+*.tmp
+*.log
