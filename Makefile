@@ -6,7 +6,7 @@
 #    By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/28 10:27:39 by joagomes          #+#    #+#              #
-#    Updated: 2026/04/28 12:32:37 by joagomes         ###   ########.fr        #
+#    Updated: 2026/04/30 14:24:00 by joagomes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,3 +76,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
