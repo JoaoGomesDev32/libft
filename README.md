@@ -193,8 +193,6 @@ The core implementation and all C code remains the responsibility of the develop
 - `libft.h`      - library header
 - `Makefile`     - build rules
 - `README.md`    - project documentation
-- `tests/`       - test files and helpers
-- `libftTester/` - additional tester files
 
 ## Notes
 
