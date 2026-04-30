@@ -163,29 +163,11 @@ gcc -Wall -Wextra -Werror main.c libft.a
 
 ### Peer Discussions
 
-Peer discussions and code reviews with fellow 42 students provided valuable insights:
-
-- **Debugging and problem-solving**: Discussing common edge cases and debugging approaches for string manipulation and memory management issues.
-- **Implementation strategies**: Sharing different approaches to solving the same problems, particularly for functions like `ft_split()` and linked list operations.
-- **Code optimization**: Receiving feedback on algorithm efficiency and best practices for handling buffer management and pointer arithmetic.
-- **Testing methodologies**: Learning how peers test their implementations thoroughly to catch subtle bugs and memory leaks.
-- **Norming and best practices**: Collaborating on maintaining consistent code style and following the 42 norm requirements throughout the project.
+Peer discussions with fellow 42 students helped with debugging edge cases, sharing implementation strategies, and ensuring code quality through collaborative reviews.
 
 ### AI Usage
 
-AI assistance was utilized for the following aspects of this project:
-
-- **Concept explanation**: AI was used to clarify and explain C programming concepts that were not initially well understood, including:
-  - Memory management and pointer behavior
-  - Buffer overflow prevention techniques
-  - Linked list operations and data structure design patterns
-  - String manipulation and edge cases
-- **Documentation and README structure**: AI helped organize and format the README.md to comply with 42 standards and best practices.
-- **Code comments and explanations**: AI assisted in generating clear descriptions for each function's purpose and behavior.
-- **Function organization**: AI provided guidance on structuring the library and categorizing functions logically.
-- **Code review suggestions**: AI offered feedback on coding style and potential improvements to maintain code quality.
-
-The core implementation and all C code remains the responsibility of the developer. AI was used as a learning and reference tool for understanding concepts, documentation structure, and quality improvement only.
+AI was used to clarify C programming concepts (memory management, pointers, string manipulation) and assist with README structure and function documentation.
 
 ## Project structure
 
