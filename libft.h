@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 13:57:56 by joagomes          #+#    #+#             */
-/*   Updated: 2026/04/28 12:32:27 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/04/30 18:51:01 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <stdint.h>
-# include <stdio.h>
 # include <unistd.h>
 
 size_t	ft_strlen(const char *s);
