@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:20:01 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/11 11:01:29 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:29:17 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ adiciona um novo no no final da lista
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
-	
+
 	if (!lst || !new)
 		return ;
 	if (*lst == NULL)

@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 12:47:32 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/11 17:21:00 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:33:36 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,31 +27,26 @@ manuseando memória sobreposta com segurança.
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*dest_cpy;
-	const unsigned char	*src_cpy;
-	size_t				i;
+	size_t	i;
 
-	dest_cpy = (unsigned char *)dest;
-	src_cpy = (const unsigned char *)src;
-
-	if (dest_cpy == src_cpy || n == 0)
+	if ((unsigned char *)dest == (unsigned char *)src || n == 0)
 		return (dest);
-	if (dest_cpy < src_cpy)
-	{
-		i = 0;
-		while (i < n)
-		{
-			dest_cpy[i] = src_cpy[i];
-			i++;
-		}
-	}
-	else
+	else if ((unsigned char *)dest > (unsigned char *)src)
 	{
 		i = n;
 		while (i > 0)
 		{
-			dest_cpy[i - 1] = src_cpy[i - 1];
+			((unsigned char *)dest)[i - 1] = ((unsigned char *)src)[i - 1];
 			i--;
+		}
+	}
+	else
+	{
+		i = 0;
+		while (i < n)
+		{
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+			i++;
 		}
 	}
 	return (dest);
