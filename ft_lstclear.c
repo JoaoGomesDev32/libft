@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 11:32:22 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/08 11:40:25 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 11:05:13 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*current;
 	t_list	*next;
 
+	if (!lst || !del)
+		return ;
 	current = *lst;
 	while (current != NULL)
 	{

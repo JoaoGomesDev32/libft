@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 15:41:04 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/08 11:37:42 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:49:57 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,13 @@ retorna o numero de nos da lista
 
 int	ft_lstsize(t_list *lst)
 {
-	t_list	*current;
 	int		len_lst;
 
 	len_lst = 0;
-	current = lst;
-	while (current != NULL)
+	while (lst != NULL)
 	{
-		current = current->next;
 		len_lst++;
+		lst = lst->next;
 	}
 	return (len_lst);
 }

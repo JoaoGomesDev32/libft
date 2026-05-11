@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 16:04:35 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/08 11:38:04 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:37:47 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,11 @@ retorna o ultimo no da lista
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*current;
-
-	if (lst == NULL)
+	if (!lst)
 		return (NULL);
-	current = lst;
-	while (current->next != NULL)
-		current = current->next;
-	return (current);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }
 /*
 int main(void)

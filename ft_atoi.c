@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 11:37:16 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/06 17:59:32 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:20:58 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,19 @@ int	ft_atoi(const char *nptr)
 	int	result;
 
 	i = 0;
-	while ((nptr[i] == ' ') || (nptr[i] == '\t')
-		|| (nptr[i] == '\n') || (nptr[i] == '\r')
-		|| (nptr[i] == '\f') || (nptr[i] == '\v'))
+	while ((nptr[i] == ' ') || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	sign = 1;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
-			sign *= -1;
+			sign = -1;
 		i++;
 	}
 	result = 0;
 	while (ft_isdigit(nptr[i]))
 	{
-		result = result * 10 + nptr[i] - '0';
+		result = result * 10 + (nptr[i] - '0');
 		i++;
 	}
 	return (result * sign);

@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:30:16 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/10 12:09:42 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:42:29 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 	t_list	*node;
 
+	if (!lst || !f || !del)
+		return (NULL);
 	new_lst = NULL;
 	while (lst != NULL)
 	{

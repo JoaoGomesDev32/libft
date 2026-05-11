@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 11:14:08 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/06 16:03:28 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:21:06 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ As áreas de memória não devem se sobrepor.
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	unsigned char		*dest_cpy;
+	const unsigned char	*src_cpy;
 
-	if (!dest && !src)
-		return (NULL);
-	i = 0;
-	while (i < n)
+	if (dest == src || n == 0)
+		return (dest);
+	while (n)
 	{
-		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
-		i++;
+		*dest_cpy++ = *src_cpy++;
+		n--;
 	}
 	return (dest);
 }

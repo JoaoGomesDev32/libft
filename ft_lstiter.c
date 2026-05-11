@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:08:54 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/08 11:42:57 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 16:36:48 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,12 @@ Percorre a lista e aplica a função f ao conteúdo de cada nó.
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*current;
-	t_list	*next;
-
-	current = lst;
-	while (current != NULL)
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
 	{
-		next = current->next;
-		f(current->content);
-		current = next;
+		f(lst->content);
+		lst = lst->next;
 	}
 }
 /*

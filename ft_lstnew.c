@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 12:38:41 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/08 10:58:27 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 11:10:24 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
+	if (!content)
+		return (NULL);
 	node = malloc(sizeof(t_list));
 	if (!node)
 		return (NULL);
