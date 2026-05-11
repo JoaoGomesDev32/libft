@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 11:14:08 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/11 17:21:06 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:19:13 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*dest_cpy;
 	const unsigned char	*src_cpy;
 
+	dest_cpy = (unsigned char *)dest;
+	src_cpy = (const unsigned char *)src;
 	if (dest == src || n == 0)
 		return (dest);
 	while (n)

@@ -6,7 +6,7 @@
 /*   By: joagomes <joagomes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 13:17:53 by joagomes          #+#    #+#             */
-/*   Updated: 2026/05/06 17:47:50 by joagomes         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:24:42 by joagomes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strdup(const char *s)
 	copy[len] = '\0';
 	return (copy);
 }
-/*
+#include <stdio.h>
 int	main(void)
 {
 	char	*src = "42 Portugal";
@@ -44,4 +44,4 @@ int	main(void)
 	free(dest);
 	return (0);
 }
-*/
+
